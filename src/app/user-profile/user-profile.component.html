@@ -1,0 +1,83 @@
+
+<form [formGroup]="userprofileForm" (ngSubmit)="postdata()">
+    <fieldset>
+   <legend>Profile</legend>
+     <label>
+       Userid:
+       <input type="text"  formControlName="uid" [(ngModel)]="uid">
+       </label>
+       <br>
+       <br>
+       <label>
+          Name:
+         <input type="text"  formControlName="name" [(ngModel)]="name">
+         </label><br>
+         <br><label>
+           Email:
+           <input type="email"  formControlName="email_id" >
+           </label>
+           <br>
+           <br>
+           <label>
+            Age:
+           <input type="text"  formControlName="age">
+           </label><br>
+           <br>
+
+           <label>
+            Phone-No:
+           <input type="text"  formControlName="phone_no">
+           </label><br>
+           <br>
+           
+           <label>
+            City:
+           <input type="text"  formControlName="city">
+           </label><br>
+           <br>
+
+                      
+           <label>
+            State:
+           <input type="text"  formControlName="state">
+           </label><br>
+           <br>
+           
+           
+           <label>
+            Country:
+           <input type="text"  formControlName="country">
+           </label><br>
+           <br>
+           
+           
+           <label>
+            Pincode:
+           <input type="text"  formControlName="pincode">
+           </label><br>
+           <br>
+           
+           
+           <label>
+            Gender:
+           <input type="text"  formControlName="gender">
+           </label><br>
+           <br>
+           
+                      
+           <label>
+            Password:
+           <input type="password"  formControlName="password">
+           </label><br>
+           <br>
+           
+           
+           <label>
+            Confirm Password:
+           <input type="password"  formControlName="confirmpass">
+           </label><br>
+           <br>
+         </fieldset>
+         <br>
+           <button type="submit" [disabled]="!userprofileForm.valid">Submit</button>
+   </form>
